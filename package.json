@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.2.2",
     "@tiptap/extension-blockquote": "^2.11.5",
     "@tiptap/extension-bubble-menu": "^2.11.5",
     "@tiptap/extension-bullet-list": "^2.11.5",
@@ -25,13 +28,15 @@
     "@tiptap/extension-youtube": "^2.11.5",
     "@tiptap/react": "^2.11.5",
     "@tiptap/starter-kit": "^2.11.5",
+    "@types/mdx": "^2.0.13",
     "highlight.js": "^11.11.1",
     "lowlight": "^3.3.0",
     "next": "15.2.1",
     "openai": "^4.86.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "sugar-high": "^0.9.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -1,0 +1,78 @@
+---
+title: 'Testing Code Highlighting'
+date: '2025-03-13'
+---
+
+# Testing Syntax Highlighting
+
+Here's a JavaScript example:
+
+```javascript
+// A simple function
+function calculateTotal(items) {
+  const total = items.reduce((sum, item) => {
+    return sum + (item.price * item.quantity);
+  }, 0);
+  
+  return total.toFixed(2);
+}
+
+// Using a class
+class ShoppingCart {
+  constructor() {
+    this.items = [];
+  }
+  
+  addItem(item) {
+    this.items.push(item);
+  }
+  
+  getTotal() {
+    return calculateTotal(this.items);
+  }
+}
+
+// Create a new cart
+const cart = new ShoppingCart();
+cart.addItem({ name: "Book", price: 12.99, quantity: 2 });
+cart.addItem({ name: "Pen", price: 1.99, quantity: 5 });
+console.log(`Total: $${cart.getTotal()}`);
+```
+
+And a TypeScript example:
+
+```typescript
+interface CartItem {
+  name: string;
+  price: number;
+  quantity: number;
+}
+
+// A simple function with TypeScript types
+function calculateTotal(items: CartItem[]): string {
+  const total = items.reduce((sum, item) => {
+    return sum + (item.price * item.quantity);
+  }, 0);
+  
+  return total.toFixed(2);
+}
+
+// Using a class with TypeScript
+class ShoppingCart {
+  private items: CartItem[] = [];
+  
+  public addItem(item: CartItem): void {
+    this.items.push(item);
+  }
+  
+  public getTotal(): string {
+    return calculateTotal(this.items);
+  }
+}
+
+// Create a new cart
+const cart = new ShoppingCart();
+cart.addItem({ name: "Book", price: 12.99, quantity: 2 });
+cart.addItem({ name: "Pen", price: 1.99, quantity: 5 });
+console.log(`Total: $${cart.getTotal()}`);
+```
