@@ -117,7 +117,7 @@ export default function HeroBlogList() {
     <div>
       {/* Filter and sort controls */}
       <div className="mb-8 mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div className="flex flex-wrap gap-2">
+        {/* <div className="flex flex-wrap gap-2">
           <button 
             onClick={() => handleTagFilter('')}
             className={`px-3 py-1 text-sm rounded-full transition ${
@@ -141,14 +141,14 @@ export default function HeroBlogList() {
               {tag}
             </button>
           ))}
-        </div>
+        </div> */}
         
         <div className="flex gap-2">
-          {/* <span className="text-sm text-gray-500 dark:text-gray-400 self-center">Sort by:</span> */}
+          <span className="text-sm text-gray-500 dark:text-gray-400 self-center">Sort by:</span>
           <select 
             value={sortBy}
             onChange={(e) => handleSort(e.target.value)}
-            className="bg-gray-100 dark:bg-gray-800 border-none rounded py-1 px-2 text-sm focus:ring-1 focus:ring-gray-400"
+            className="bg-gray-100 dark:bg-gray-800 border-none rounded py-1 px-2 text-sm focus:ring-1 focus:ring-gray-400 mx-auto text-center"
           >
             <option value="latest">Latest</option>
             <option value="oldest">Oldest</option>
