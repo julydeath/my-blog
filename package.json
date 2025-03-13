@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "generate" : "npx drizzle-kit generate",
+    "migrate" : "npx drizzle-kit migrate",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
